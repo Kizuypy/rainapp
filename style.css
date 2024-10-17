@@ -1,0 +1,219 @@
+body {
+    background: url('imgs/chuva.gif') no-repeat center center; /* Garante que a imagem ocupe o fundo */
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column; /* Adiciona a direção da coluna */
+}
+
+.hidden {
+    display: none; /* Oculta a seção */
+}
+
+.weather {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease; /* Transição suave para a opacidade */
+}
+
+.weather.visible {
+    opacity: 1; /* Visível quando a classe "visible" é adicionada */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin: 20px; /* Espaço ao redor do container */
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 20px 0; /* Espaço acima e abaixo do card */
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.feedback {
+    width: 100%; 
+    background: url('imgs/fish.gif') no-repeat center center; 
+    background-size: cover; 
+    color: #ffffff; /* Cor do texto */
+    text-align: center; 
+    padding: 15px 0; 
+    margin-top: 20px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para melhor legibilidade */
+}
+
+/* Para o texto específico */
+.feedback p {
+    color: #ffffff; /* Altere aqui para a cor desejada */
+}
+
+
+.feedback a {
+    color: #FFD700; /* Cor do link em amarelo dourado */
+    text-decoration: underline; /* Sublinha o link */
+}
+
+.feedback a:hover {
+    text-decoration: none; /* Remove a sublinha ao passar o mouse */
+}
+
+.pesquisa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.pesquisa input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pesquisa button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa img {
+    width: 60px;
+    height: auto;
+}
+
+.weather-icon {
+    width: auto;
+    height: 100px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.temp {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.humidity-section,
+.wind-section {
+    display: flex;
+    align-items: center;
+}
+
+.humidity-section img,
+.wind-section img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity-section div,
+.wind-section div {
+    text-align: left;
+}
+
+.humidity {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+.morning-winter {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.night-winter {
+    background: linear-gradient(135deg, #003366, #5b548a);
+}
+
+.morning-hot {
+    background: linear-gradient(135deg, #ff0000, #f48b00);
+}
+
+.morning-healthy {
+    background: linear-gradient(135deg, #00ff00, #ffcc00);
+}
+
+.night-rain {
+    background: url('imgs/night_rain.gif');
+}
+
+.night-hot {
+    background: linear-gradient(135deg, #ff0000, #f48b00);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+footer a {
+    color: #00feba;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0056b3;
+}

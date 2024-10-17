@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form id="city-form">
+                <div class="pesquisa">
+                    <input type="text" id="city-input" placeholder="Pesquisar cidade" spellcheck="false">
+                    <button type="submit" id="search-btn"><img src="imgs/searchnuvem.png" alt="Pesquisar"></button>
+                </div>
+            </form>
+            <div class="weather hidden">
+                <img src="imgs/cloudrain.png" class="weather-icon" alt="Ícone do clima">
+                <h1 class="temp">39°C</h1>
+                <h2 class="city">Dourados-MS</h2>
+                <p class="time"><span class="local-time">00:00</span></p>
+                <div class="details">
+                    <div class="wind-section">
+                        <img src="imgs/wind.png" alt="Vento">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Velocidade do Vento</p>
+                        </div>
+                    </div>
+                    <div class="humidity-section">
+                        <img src="imgs/humidity.png" alt="Umidade">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Umidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="feedback">
+            <p>Envie seu feedback <a href="formulario.html">aqui</a>.</p>
+        </footer>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
